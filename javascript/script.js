@@ -4,7 +4,24 @@ const sidebar = document.querySelector("#sidebar");
 const date = document.querySelector("#date");
 
 // add clearfix class to navbar
-window.addEventListener('resize', function(event) {
+window.addEventListener('resize', function (event) {
+    let navbar = document.querySelector("#nav-bar");
+    let logo = document.querySelector("#logo");
+    // do stuff here
+    if (window.innerWidth < 769) {
+        navbar.classList.add("clearfix");
+    } else {
+        navbar.classList.remove("clearfix");
+    }
+
+    if (window.innerWidth < 769) {
+        logo.classList.add("clearfix");
+    } else {
+        logo.classList.remove("clearfix");
+    }
+});
+
+window.addEventListener('load', function (event) {
     let navbar = document.querySelector("#nav-bar");
     let logo = document.querySelector("#logo");
     // do stuff here
@@ -22,10 +39,10 @@ window.addEventListener('resize', function(event) {
 });
 
 // show sidebar
-navBtn.addEventListener("click", function() {
+navBtn.addEventListener("click", function () {
     sidebar.classList.add("show-sidebar");
 });
-closeBtn.addEventListener("click", function() {
+closeBtn.addEventListener("click", function () {
     sidebar.classList.remove("show-sidebar");
 });
 
@@ -84,7 +101,7 @@ function submitForm() {
     }
     if (submitFlag) {
         var xhttp = new XMLHttpRequest();
-        xhttp.onreadystatechange = function() {
+        xhttp.onreadystatechange = function () {
             if (this.readyState == 4 && this.status == 200) {
                 document.getElementById("submitText").innerHTML = "<p>Hello " + document.getElementById("name").value + "! " + this.responseText + "</p>";
                 document.getElementById("submitText").firstChild.style.color = 'black';

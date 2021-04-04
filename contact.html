@@ -1,193 +1,155 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <title>Contact</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta charset="UTF-8" />
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="./fontawesome-free-5.12.1-web/css/all.css" />
     <link rel="shortcut icon" type="image/x-icon" href="./images/favicon.png" />
-  </head>
+</head>
 
-  <body>
+<body>
     <header class="header">
-      <div class="logo clearfix" id="logo">
-        <img src="./images/logo.jpeg" alt="logo" class="logo-container" />
-        <span class="bar-btn" id="nav-btn">
+        <div class="logo clearfix" id="logo">
+            <img src="./images/logo.jpeg" alt="logo" class="logo-container" />
+            <span class="bar-btn" id="nav-btn">
           <i class="fas fa-bars"></i>
         </span>
-      </div>
-      <nav class="nav-bar clearfix" id="nav-bar">
-        <ul class="nav-links">
-          <li><a href="index.html" class="nav-link">who we are</a></li>
-          <li><a href="#" class="nav-link">what we do</a></li>
-          <li><a href="whoweserve.html" class="nav-link">who we serve</a></li>
-          <li><a href="#" class="nav-link">company</a></li>
-          <li><a href="contact.html" class="nav-link">contact</a></li>
-        </ul>
-      </nav>
+        </div>
+        <nav class="nav-bar clearfix" id="nav-bar">
+            <ul class="nav-links">
+                <li><a href="index.html" class="nav-link">who we are</a></li>
+                <li><a href="#" class="nav-link">what we do</a></li>
+                <li><a href="whoweserve.html" class="nav-link">who we serve</a></li>
+                <li><a href="company.html" class="nav-link">company</a></li>
+                <li><a href="contact.html" class="nav-link">contact</a></li>
+            </ul>
+        </nav>
     </header>
 
     <!-- side bar -->
     <aside class="sidebar" id="sidebar">
-      <div>
-        <button class="close-btn" id="close-btn">
+        <div>
+            <button class="close-btn" id="close-btn">
           <i class="fas fa-times"></i>
         </button>
-        <ul class="sidebar-links">
-          <li>
-            <a href="index.html">who we are</a>
-          </li>
-          <li>
-            <a href="#">what we do</a>
-          </li>
-          <li>
-            <a href="whoweserve.html">who we serve</a>
-          </li>
-          <li>
-            <a href="#">company</a>
-          </li>
-          <li>
-            <a href="contact.html">contact</a>
-          </li>
-        </ul>
-      </div>
+            <ul class="sidebar-links">
+                <li>
+                    <a href="index.html">who we are</a>
+                </li>
+                <li>
+                    <a href="#">what we do</a>
+                </li>
+                <li>
+                    <a href="whoweserve.html">who we serve</a>
+                </li>
+                <li>
+                    <a href="#">company</a>
+                </li>
+                <li>
+                    <a href="contact.html">contact</a>
+                </li>
+            </ul>
+        </div>
     </aside>
     <!-- end of sidebar -->
 
     <main>
-      <section class="banner">
-        <!-- Section add's banner to contact page -->
-      </section>
-      <h3 class="title">Inquiry</h3>
-      <section class="section-center contact-section">
-        <!-- address -->
-        <article class="contact-address">
-          <h3>Get in touch with us</h3>
-          <h4>Pune</h4>
-          <p>
-            2nd Floor, F Wing Lotus Corporate Park,<br />
-            Magarpatta City, Hadapsar, <br />
-            Maharashtra, India 411 063 <br />
-            Ph: +91 20 1234 5678
-          </p>
+        <div class="banner"></div>
+        <h3 class="title">Inquiry</h3>
+        <section class="section-center contact-section">
+            <!-- address -->
+            <h3>Get in touch with us</h3>
+            <h3 style='padding-left:30%;float:right;'>Write to Us</h3>
+            <article class="contact-address">
 
-          <h4>Mumbai</h4>
-          <p>
-            8th Floor, IT 8 <br />
-            Qubix SEZ Business Park <br />
-            Hinjewadi, Pune <br />
-            Maharashtra, India 400 057 <br />
-            Ph: +91 20 1234 1234
-          </p>
-        </article>
-        <!-- end of address -->
+                <h4>Pune</h4>
+                <p>
+                    2nd Floor, F Wing Lotus Corporate Park,<br /> Magarpatta City, Hadapsar, <br /> Maharashtra, India 411 063 <br /> Ph: +91 20 1234 5678
+                </p>
 
-        <!-- contact form -->
-        <article class="contact-form">
-          <h3>Write to Us</h3>
-          <form name="connectform">
-            <div class="form-control">
-              <label for="name">Name</label>
-              <input
-                type="text"
-                id="name"
-                placeholder="Name"
-                class="form-input"
-              />
-              <p id="errorName"></p>
-            </div>
-            <div class="form-control">
-              <label for="company">company</label>
-              <input
-                type="text"
-                id="company"
-                placeholder="Company"
-                class="form-input"
-              />
-              <!-- <p id="errorName"></p> -->
-            </div>
-            <div class="form-control">
-              <label for="position">position</label>
-              <input
-                type="text"
-                id="position"
-                placeholder="Position"
-                class="form-input"
-              />
-              <!-- <p id="errorName"></p> -->
-            </div>
-            <div class="form-control">
-              <label for="email">Email</label>
-              <input
-                type="text"
-                id="email"
-                placeholder="Email"
-                class="form-input"
-              />
-              <p id="errorEmail"></p>
-            </div>
-            <div class="form-control">
-              <label for="description">Description</label>
-              <textarea
-                name="description"
-                id="description"
-                cols="30"
-                rows="10"
-                placeholder="Description"
-                class="form-input"
-              ></textarea>
-              <p id="errorDesc"></p>
-            </div>
-            <input
-              type="button"
-              id="submit"
-              value="submit"
-              class="form-btn"
-              onclick="submitForm()"
-            />
-            <div class="form-control" id="submitText"></div>
-          </form>
-        </article>
-        <!-- end of contact form -->
-      </section>
+                <h4>Mumbai</h4>
+                <p>
+                    8th Floor, IT 8 <br /> Qubix SEZ Business Park <br /> Hinjewadi, Pune <br /> Maharashtra, India 400 057 <br /> Ph: +91 20 1234 1234
+                </p>
+            </article>
+            <!-- end of address -->
+
+            <!-- contact form -->
+            <article class="contact-form">
+                <h4 style='padding-left:30%;'>Happy to help you</h4>
+                <form name="connectform">
+                    <div class="form-control">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" placeholder="Name" class="form-input" />
+                        <p id="errorName"></p>
+                    </div>
+                    <div class="form-control">
+                        <label for="company">company</label>
+                        <input type="text" id="company" placeholder="Company" class="form-input" />
+                        <!-- <p id="errorName"></p> -->
+                    </div>
+                    <div class="form-control">
+                        <label for="position">position</label>
+                        <input type="text" id="position" placeholder="Position" class="form-input" />
+                        <!-- <p id="errorName"></p> -->
+                    </div>
+                    <div class="form-control">
+                        <label for="email">Email</label>
+                        <input type="text" id="email" placeholder="Email" class="form-input" />
+                        <p id="errorEmail"></p>
+                    </div>
+                    <div class="form-control">
+                        <label for="description">Description</label>
+                        <textarea name="description" id="description" cols="30" rows="10" placeholder="Description" class="form-input"></textarea>
+                        <p id="errorDesc"></p>
+                    </div>
+                    <input type="button" id="submit" value="submit" class="form-btn" onclick="submitForm()" />
+                    <div class="form-control" id="submitText"></div>
+                </form>
+            </article>
+            <!-- end of contact form -->
+        </section>
     </main>
 
     <!-- footer -->
     <footer class="footer">
-      <hr />
-      <!-- social icons -->
-      <ul class="social-icons">
-        <li>
-          <a href="#" class="social-icon">
-            <i class="fab fa-facebook"></i>
-          </a>
-        </li>
-        <li>
-          <a href="#" class="social-icon">
-            <i class="fab fa-linkedin"></i>
-          </a>
-        </li>
-        <li>
-          <a href="#" class="social-icon">
-            <i class="fab fa-twitter"></i>
-          </a>
-        </li>
-        <li>
-          <a href="#" class="social-icon">
-            <i class="fab fa-youtube"></i>
-          </a>
-        </li>
-        <li>
-          <a href="#" class="social-icon">
-            <i class="fab fa-instagram"></i>
-          </a>
-        </li>
-      </ul>
-      <!-- end of social icon -->
-      <p>&copy; <span id="date"></span> all rights reserved</p>
+        <hr />
+        <!-- social icons -->
+        <ul class="social-icons">
+            <li>
+                <a href="#" class="social-icon">
+                    <i class="fab fa-facebook"></i>
+                </a>
+            </li>
+            <li>
+                <a href="#" class="social-icon">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+            </li>
+            <li>
+                <a href="#" class="social-icon">
+                    <i class="fab fa-twitter"></i>
+                </a>
+            </li>
+            <li>
+                <a href="#" class="social-icon">
+                    <i class="fab fa-youtube"></i>
+                </a>
+            </li>
+            <li>
+                <a href="#" class="social-icon">
+                    <i class="fab fa-instagram"></i>
+                </a>
+            </li>
+        </ul>
+        <!-- end of social icon -->
+        <p>&copy; <span id="date"></span> all rights reserved</p>
     </footer>
     <!-- end of footer -->
     <script src="./javascript/script.js"></script>
-  </body>
+</body>
+
 </html>

@@ -33,6 +33,10 @@
     --grey-8: #e9ecef;
 }
 
+#imp {
+    color: red;
+}
+
 *,
 ::after,
 ::before {

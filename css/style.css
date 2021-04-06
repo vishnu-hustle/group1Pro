@@ -702,16 +702,26 @@ Who We Serve
 .company-posts ul li a {
     text-decoration: none;
     padding: .2em 1em;
+    text-decoration: underline;
 }
 
 .company-posts ul li a:hover {
     color: var(--clr-primary-5);
     transform: scale(1.2);
+} 
+
+.company-news ul li a:link{
+    
+    padding: .2em 1em;
+    color: red;
+    
 }
 
 .company-news ul li a {
     text-decoration: none;
+    text-decoration: underline;
     padding: .2em 1em;
+    
 }
 
 .company-news ul li a:hover {

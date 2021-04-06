@@ -2,238 +2,163 @@
 <html lang="en">
 
 <head>
-    <title>Group1</title>
-    <style>
-      
-    </style>
-      
-
-
-    <script>
-      var imgArray = new Array(4);
-      var index = 0;
-           
-      function startup()
-      {
-        const images = [
-          'url("images/im1.jpg")',
-          'url("images/im2.jpg")',
-          'url("images/im3.jpg")',
-          'url("images/im4.jpg")',
-          'url("images/im5.jpg")',
-          'url("images/im6.jpg")',
-          'url("images/im7.jpeg")',
-          'url("images/im8.jpg")',
-          'url("images/im9.jpg")',
-          'url("images/im10.jpg")',
-        ]
-        
-        const section = document.getElementById('banner')
-        const bg = images[Math.floor(Math.random() * images.length)];
-        section.style.backgroundImage = bg;
-        
-       
-      
-      }
-      setInterval(startup, 3000)
-      </script>
-
-      
+    <title>Contact</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta charset="UTF-8" />
-    <link rel="stylesheet" href="./css/style2.css" />
+    <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="./fontawesome-free-5.12.1-web/css/all.css" />
     <link rel="shortcut icon" type="image/x-icon" href="./images/favicon.png" />
+    <script>
+        var imgArray = new Array(4);
+        var index = 0;
+
+        function startup() {
+            const images = [
+                'url("images/im1.jpg")',
+                'url("images/im2.jpg")',
+                'url("images/im4.jpg")',
+                'url("images/im5.jpg")',
+                'url("images/im6.jpg")',
+                'url("images/im8.jpg")',
+                'url("images/im9.jpg")'
+            ]
+
+            const section = document.getElementById('bannerCompany')
+            const bg = images[Math.floor(Math.random() * images.length)];
+            section.style.backgroundImage = bg;
+
+
+
+        }
+        setInterval(startup, 3000)
+    </script>
 </head>
 
-<body >
-  <div id="bannerimage">
-    <script src="./javascript/script.js"></script>
+<body>
     <header class="header">
         <div class="logo clearfix" id="logo">
             <img src="./images/logo.jpeg" alt="logo" class="logo-container" />
             <span class="bar-btn" id="nav-btn">
-        <i class="fas fa-bars"></i>
-      </span>
+          <i class="fas fa-bars"></i>
+        </span>
         </div>
         <nav class="nav-bar clearfix" id="nav-bar">
-          <ul class="nav-links">
-            
-              <li><a href="#" class="nav-link">what we do</a></li>
-              <li><a href="index.html" class="nav-link">who we are</a></li>
-              <li><a href="#" class="nav-link">who we serve</a></li>
-              <li><a href="company.html" class="nav-link">company</a></li>
-              <li><a href="contact.html" class="nav-link">contact</a></li>
-          </ul>
-      </nav>
+            <ul class="nav-links">
+                <li><a href="index.html" class="nav-link">who we are</a></li>
+                <li><a href="whatwedo.html" class="nav-link">what we do</a></li>
+                <li><a href="whoweserve.html" class="nav-link">who we serve</a></li>
+                <li><a href="company.html" class="nav-link">company</a></li>
+                <li><a href="contact.html" class="nav-link">contact</a></li>
+            </ul>
+        </nav>
     </header>
 
     <!-- side bar -->
     <aside class="sidebar" id="sidebar">
         <div>
             <button class="close-btn" id="close-btn">
-        <i class="fas fa-times"></i>
-      </button>
-      <ul class="sidebar-links">
-        <li>
-            <a href="index.html">who we are</a>
-        </li>
-        <li>
-            <a href="#">what we do</a>
-        </li>
-        <li>
-            <a href="#">who we serve</a>
-        </li>
-        <li><a href="company.html" class="nav-link">company</a></li>
-        <li>
-            <a href="contact.html">contact</a>
-        </li>
-    </ul>
+          <i class="fas fa-times"></i>
+        </button>
+            <ul class="sidebar-links">
+                <li>
+                    <a href="index.html">who we are</a>
+                </li>
+                <li>
+                    <a href="#">what we do</a>
+                </li>
+                <li>
+                    <a href="whoweserve.html">who we serve</a>
+                </li>
+                <li>
+                    <a href="#">company</a>
+                </li>
+                <li>
+                    <a href="contact.html">contact</a>
+                </li>
+            </ul>
         </div>
     </aside>
     <!-- end of sidebar -->
 
-    <main > 
-       
-      <section class="banner" id="banner" name="banner">
-     
-      
-      </section>
-      
+    <main>
+        <div class="bannerCompany" id="bannerCompany"></div>
 
-        <div id="line">
-        <div class="wrapper">
-            <head>
-                <title>Group1</title>
-                <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-                <meta charset="UTF-8" />
-                <link rel="stylesheet" href="./css/style2.css" />
-               
-            </head>
-        
-          <header role="banner">
-            <nav role="navigation">
-          
-            
-            </nav>
-          </header>
-          <main role="main">
-            <section class="sec-intro" role="section">
-              <img src="https://www.techweekeurope.co.uk/wp-content/uploads/2012/07/wifimountaindownload.jpg" alt="" />
-              
-            </section>
-            <section class="sec-boxes" role="section">
-            
-              <adrticle class="box">
-                <h2>Creative</h2>
-                <p>Brainstorming, idea generation, playing sessions, note taking. You think you used everything? We will challenge your mind and its abilities to the limits.</p>
-                <button class="button" type="button" role="button" value="MORE">More</button>
-              </adrticle>
-              <adrticle class="box">
-                <h2>Bold</h2>
-                <p>Our methods and ideas are are not written or following any books, curriculums or rules. We consider ourselves rebels and we are proud of it.</p>
-                <button class="button" type="button" role="button" value="MORE">More</button>
-              </adrticle>
-              <adrticle class="box">
-                <h2>Smart</h2>
-                <p>Every project with innovation as a goal requires smart approach. Identify real problem first and look for the smartest and simplest solution later.</p>
-                <button class="button" type="button" role="button" value="MORE">More</button>
-              </adrticle>
-              <adrticle class="box">
-                <h2>Flexible</h2>
-                <p>Projects with flexibility as a goal requires smart approach. Identify real problem first and look for the smartest and simplest solution later.</p>
-                <button class="button" type="button" role="button" value="MORE">More</button>
-              </adrticle>
+        <section class="section-center">
+            <h3 class="company-title">We Lightening Services are commited to our clients and help them to grow with us</h3>
+            <article class="company-news">
+                <h3 class="title">News</h3>
+                <h4>Latest News...</h4>
+                <ul>
+                    <li><a>News 1</a></li>
+                    <li><a>News 2</a></li>
+                    <li><a>News 3</a></li>
+                    <li><a>News 4</a></li>
+                </ul>
+                <br>
+                <h4>Previous News...</h4>
+                <ul>
+                    <li><a>News 1</a></li>
+                    <li><a>News 2</a></li>
+                    <li><a>News 3</a></li>
+                    <li><a>News 4</a></li>
+                </ul>
+            </article>
 
-            </section>
-            <section class="sec-events" role="section">
-              <hr />
-              <h3>Upcomming events</h3>
-              <article>
-                <h1>Tire Technology Expo</h1>
-                <p>Tire Technology Expo has grown in strength and stature every year since it was started in Europe 15 years ago. Visitors and exhibitors to the conference and exhibition staged in February 2014 universally praised it as the 'world's leading tire design and tire manufacturing event', noting in particular the outstanding quality of the conference papers and speakers, and the comprehensive extent of machinery manufacturers and suppliers who exhibited at the event.</p>
-                <a class="link" href="#">more...</a>
-              </article>
-              <article>
-                <h1>Meteorology World Expo</h1>
-                <p>Meteorological Technology World Expo is a truly international exhibition of the very latest climate, weather and hydro - meteorological forecasting, measurement and analysis technologies and service providers for a global community of key decision makers within the aviation industry, shipping companies, marine / port installations, airports, military operations, off-shore exploration companies, wind farm operators, met offices, agriculture operations and research institutes.</p>
-                <a class="link" href="#">more...</a>
-              </article>
-              <article>
-                <h1>Wearable Tech Expo</h1>
-                <p>See live demos, listen to case studies, speak with Wearable Tech Experts The first Wearable Tech Expo in Tokyo 2014. Key players from Japan, America and Europe announced their new products and attracted attention from all over the world. The next Wearable Tech Expo in Tokyo will be doubling in size and include Robotics and IoT. The main players in the wearable industry, human factor engineers, brain scientists, media providers and creators will discuss the future of wearable technology! </p>
-                <a class="link" href="#">more...</a>
-              </article>
-              <article>
-                <h1>Space Tech Expo</h1>
-                <p>Space Tech Expo is the West Coast's premier B2B space event for spacecraft, satellite, launch vehicle and space-related technologies. Taking place in Long Beach, the Space Tech Expo exhibition and conference brings together global decision-makers involved in the design, build and testing of spacecraft, satellite, launch vehicle and space-related technologies. Leading the West Coast space and satellite industry, Space Tech Expo is where end-users connect with solution providers.</p>
-                <a class="link" href="#">more...</a>
-              </article>
-            </section>
-            <section class="sec-projects" role="section">
-              <hr />
-              <h2>Previous Projects</h2>
-              <article>
-                <h1>Neural network for Google</h1>
-                <p>People from Google approached us this January with offer to create new neural network for whole Google's ecosystem. This idea was very interesting and looked almost impossible at first glance. However, our engineers proved their expertise and built amazing autonomous platform. <a class="link" href="#">more...</a></p>
-              </article>
-              <article>
-                <h1>Faster operating system for Apple</h1>
-                <p>For a years, since founding days of a company, Apple always worked with its own operating system. In October, this was about to change. Our company got chance to rewrite the history by creating brand new OS for Apple. It was very difficult and all our employees worked hard every day. <a class="link" href="#">more...</a></p>
-              </article>
-              <article>
-                <h1>Manufacturing technology for Intel</h1>
-                <p>Intel has been manufacturing company for many years. They always used the latest technologies to achieve the best results with lowest costs. However, this was not enough. Intel decided to offer us something that could disrupt whole technology sector. <a class="link" href="#">more...</a></p>
-              </article>
-            </section>
-            <section class="sec-standards" role="section">
-              <hr />
-              <h2>Our Standards</h2>
-              <article>
-                <h4>Excellence</h4>
-                <p>Our goal is to give our customers the best solutions in highest aquality. Our employees strive for excellence and work hard to achieve it. Everything must work and be reliable. Great design must be both, aesthetic and functional. Product or service that pass these conditions will be everlasting.</p>
-              </article>
-              <article>
-                <h4>Uniqueness</h4>
-                <p>Our mantra is to create new paths. We are not interested in copying others because we know, that if you want to succeed, you have to be different, unique. Our customers know that we create unique products and experience for them. This is the best way to differentiate us and our brand from the noise on market. Unique, different and proud.</p>
-              </article>
-            </section>
-            <section class="sec-partners" role="section">
-              <hr />
-              <h1>Our Partners</h1>
-              <div class="row">
-                <div class="logo-container">
-                  <img src="https://i.imgur.com/oSriTuP.png" alt="Google logo" />
-                </div>
-                <div class="logo-container">
-                  <img src="https://i.imgur.com/kRgvevC.png" alt="Apple logo" />
-                </div>
-                <div class="logo-container">
-                  <img src="https://i.imgur.com/ZZjeIP3.png" alt="Wii logo" />
-                </div>
-                <div class="logo-container">
-                  <img src="https://i.imgur.com/536rtCW.png" alt="Valve logo" />
-                </div>
-                <div class="logo-container">
-                  <img src="https://i.imgur.com/VTq1c9p.png" alt="Adithya Institute of Technology logo" />
-                </div>
-                <div class="logo-container">
-                  <img src="https://i.imgur.com/GdYoyxo.png" alt="Intel logo" />
-                </div>
-              </div>
-            </section>
-          </main>
-        </div>
-        </div>
-        <footer>
-          <nav role="navigation">
-           
-          </nav>
-          
-        </footer>
-        <div class="line"></div>
+            <article class="company-posts">
+                <h3 class="title">Leadership Views</h3>
+                <ul>
+                    <li><a>Leader view 1</a></li>
+                    <li><a>Leader view 2</a></li>
+                    <li><a>Leader view 3</a></li>
+                    <li><a>Leader view 4</a></li>
+                </ul>
+            </article>
 
-
+            <article class="company-events">
+                <h3 class="title">Upcoming Events</h3>
+                <div id="wrapper">
+                    <div id="row">
+                        <div id="first">
+                            <h4>Event 1</h4>
+                            <p>Commodo sit amet aliquet urna vulputate. Phasellus eget vulputate metus. Nam lacinia nisl quis nibh scelerisque eget suscipit tortor fringilla. Donec eu pulvinar tortor. Suspendisse malesuada faucibus eros, vitae molestie quam
+                                tempus commodo. Curabitur aliquet cursus viverra. Sed vel vestibulum quam. Curabitur pulvinar hendrerit justo vestibulum pulvinar. Nulla sit amet nunc felis, et consequat arcu. Donec lacinia massa et arcu commodo sit amet
+                                aliquet urna vulputate. Phasellus eget vulputate metus. Nam lacinia nisl quis nibh scelerisque eget suscipit tortor fringilla. Donec eu pulvinar tortor. Suspendisse malesuada faucibus eros, vitae molestie quam tempus commodo.
+                                Curabitur aliquet cursus viverra. Sed vel vestibulum quam. Curabitur pulvinar hendrerit justo vestibulum pulvinar. Nulla sit amet nunc felis, et consequat arcu. … <a href="#">Read entire article »</a></p>
+                        </div>
+                        <div id="second">
+                            <h4>Event 2</h4>
+                            <p>Commodo sit amet aliquet urna vulputate. Phasellus eget vulputate metus. Nam lacinia nisl quis nibh scelerisque eget suscipit tortor fringilla. Donec eu pulvinar tortor. Suspendisse malesuada faucibus eros, vitae molestie quam
+                                tempus commodo. Curabitur aliquet cursus viverra. Sed vel vestibulum quam. Curabitur pulvinar hendrerit justo vestibulum pulvinar. Nulla sit amet nunc felis, et consequat arcu. Donec lacinia massa et arcu commodo sit amet
+                                aliquet urna vulputate. Phasellus eget vulputate metus. Nam lacinia nisl quis nibh scelerisque eget suscipit tortor fringilla. Donec eu pulvinar tortor. Suspendisse malesuada faucibus eros, vitae molestie quam tempus commodo.
+                                Curabitur aliquet cursus viverra. Sed vel vestibulum quam. Curabitur pulvinar hendrerit justo vestibulum pulvinar. Nulla sit amet nunc felis, et consequat arcu. … <a href="#">Read entire article »</a></p>
+                        </div>
+                        <div id="third">
+                            <h4>Event 3</h4>
+                            <p>Commodo sit amet aliquet urna vulputate. Phasellus eget vulputate metus. Nam lacinia nisl quis nibh scelerisque eget suscipit tortor fringilla. Donec eu pulvinar tortor. Suspendisse malesuada faucibus eros, vitae molestie quam
+                                tempus commodo. Curabitur aliquet cursus viverra. Sed vel vestibulum quam. Curabitur pulvinar hendrerit justo vestibulum pulvinar. Nulla sit amet nunc felis, et consequat arcu. Donec lacinia massa et arcu commodo sit amet
+                                aliquet urna vulputate. Phasellus eget vulputate metus. Nam lacinia nisl quis nibh scelerisque eget suscipit tortor fringilla. Donec eu pulvinar tortor. Suspendisse malesuada faucibus eros, vitae molestie quam tempus commodo.
+                                Curabitur aliquet cursus viverra. Sed vel vestibulum quam. Curabitur pulvinar hendrerit justo vestibulum pulvinar. Nulla sit amet nunc felis, et consequat arcu. … <a href="#">Read entire article »</a></p>
+                        </div>
+                        <div id="fourth">
+                            <h4>Event 4</h4>
+                            <p>Commodo sit amet aliquet urna vulputate. Phasellus eget vulputate metus. Nam lacinia nisl quis nibh scelerisque eget suscipit tortor fringilla. Donec eu pulvinar tortor. Suspendisse malesuada faucibus eros, vitae molestie quam
+                                tempus commodo. Curabitur aliquet cursus viverra. Sed vel vestibulum quam. Curabitur pulvinar hendrerit justo vestibulum pulvinar. Nulla sit amet nunc felis, et consequat arcu. Donec lacinia massa et arcu commodo sit amet
+                                aliquet urna vulputate. Phasellus eget vulputate metus. Nam lacinia nisl quis nibh scelerisque eget suscipit tortor fringilla. Donec eu pulvinar tortor. Suspendisse malesuada faucibus eros, vitae molestie quam tempus commodo.
+                                Curabitur aliquet cursus viverra. Sed vel vestibulum quam. Curabitur pulvinar hendrerit justo vestibulum pulvinar. Nulla sit amet nunc felis, et consequat arcu. … <a href="#">Read entire article »</a></p>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            <article class="company-clients">
+                <h3 class="title">Our Clients</h3>
+                <ul>
+                    <li><img src="https://i.imgur.com/oSriTuP.png" alt="Google logo" /></li>
+                    <li><img src="https://i.imgur.com/kRgvevC.png" alt="Apple logo" /></li>
+                    <li><img src="https://i.imgur.com/GdYoyxo.png" alt="Intel logo" /></li>
+                    <li><img src="https://i.imgur.com/536rtCW.png" alt="Valve logo" /></li>
+                </ul>
+            </article>
+        </section><br>
     </main>
 
     <!-- footer -->
@@ -271,7 +196,7 @@
         <p>&copy; <span id="date"></span> all rights reserved</p>
     </footer>
     <!-- end of footer -->
-  </div>
+    <script src="./javascript/script.js"></script>
 </body>
 
 </html>

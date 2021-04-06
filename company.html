@@ -2,303 +2,163 @@
 <html lang="en">
 
 <head>
-    <title>Group1</title>
-    <style>
-      
-    </style>
-      
-
-
-    <script>
-      var imgArray = new Array(4);
-      var index = 0;
-           
-      function startup()
-      {
-        const images = [
-          'url("images/im1.jpg")',
-          'url("images/im2.jpg")',
-          'url("images/im3.jpg")',
-          'url("images/im4.jpg")',
-          'url("images/im5.jpg")',
-          'url("images/im6.jpg")',
-          'url("images/im7.jpeg")',
-          'url("images/im8.jpg")',
-          'url("images/im9.jpg")',
-          'url("images/im10.jpg")',
-        ]
-        
-        const section = document.getElementById('banner')
-        const bg = images[Math.floor(Math.random() * images.length)];
-        section.style.backgroundImage = bg;
-        
-       
-      
-      }
-      setInterval(startup, 3000)
-      </script>
-
-      
+    <title>Contact</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta charset="UTF-8" />
-    <link rel="stylesheet" href="./css/style2.css" />
+    <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="./fontawesome-free-5.12.1-web/css/all.css" />
     <link rel="shortcut icon" type="image/x-icon" href="./images/favicon.png" />
+    <script>
+        var imgArray = new Array(4);
+        var index = 0;
+
+        function startup() {
+            const images = [
+                'url("images/im1.jpg")',
+                'url("images/im2.jpg")',
+                'url("images/im4.jpg")',
+                'url("images/im5.jpg")',
+                'url("images/im6.jpg")',
+                'url("images/im8.jpg")',
+                'url("images/im9.jpg")'
+            ]
+
+            const section = document.getElementById('bannerCompany')
+            const bg = images[Math.floor(Math.random() * images.length)];
+            section.style.backgroundImage = bg;
+
+
+
+        }
+        setInterval(startup, 3000)
+    </script>
 </head>
 
-<body >
-  <div id="bannerimage">
-    <script src="./javascript/script.js"></script>
+<body>
     <header class="header">
         <div class="logo clearfix" id="logo">
             <img src="./images/logo.jpeg" alt="logo" class="logo-container" />
             <span class="bar-btn" id="nav-btn">
-        <i class="fas fa-bars"></i>
-      </span>
+          <i class="fas fa-bars"></i>
+        </span>
         </div>
         <nav class="nav-bar clearfix" id="nav-bar">
-          <ul class="nav-links">
-            
-              <li><a href="#" class="nav-link">what we do</a></li>
-              <li><a href="index.html" class="nav-link">who we are</a></li>
-              <li><a href="#" class="nav-link">who we serve</a></li>
-              <li><a href="company.html" class="nav-link">company</a></li>
-              <li><a href="contact.html" class="nav-link">contact</a></li>
-          </ul>
-      </nav>
+            <ul class="nav-links">
+                <li><a href="index.html" class="nav-link">who we are</a></li>
+                <li><a href="whatwedo.html" class="nav-link">what we do</a></li>
+                <li><a href="whoweserve.html" class="nav-link">who we serve</a></li>
+                <li><a href="company.html" class="nav-link">company</a></li>
+                <li><a href="contact.html" class="nav-link">contact</a></li>
+            </ul>
+        </nav>
     </header>
 
     <!-- side bar -->
     <aside class="sidebar" id="sidebar">
         <div>
             <button class="close-btn" id="close-btn">
-        <i class="fas fa-times"></i>
-      </button>
-      <ul class="sidebar-links">
-        <li>
-            <a href="index.html">who we are</a>
-        </li>
-        <li>
-            <a href="#">what we do</a>
-        </li>
-        <li>
-            <a href="#">who we serve</a>
-        </li>
-        <li><a href="company.html" class="nav-link">company</a></li>
-        <li>
-            <a href="contact.html">contact</a>
-        </li>
-    </ul>
+          <i class="fas fa-times"></i>
+        </button>
+            <ul class="sidebar-links">
+                <li>
+                    <a href="index.html">who we are</a>
+                </li>
+                <li>
+                    <a href="#">what we do</a>
+                </li>
+                <li>
+                    <a href="whoweserve.html">who we serve</a>
+                </li>
+                <li>
+                    <a href="#">company</a>
+                </li>
+                <li>
+                    <a href="contact.html">contact</a>
+                </li>
+            </ul>
         </div>
     </aside>
     <!-- end of sidebar -->
 
-    <main > 
-       
-      <section class="banner" id="banner" name="banner">
-     
-      
-      </section>
-      
+    <main>
+        <div class="bannerCompany" id="bannerCompany"></div>
 
-        <div id="line">
-        <div class="wrapper">
-            <head>
-                <title>Group1</title>
-                <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-                <meta charset="UTF-8" />
-                <link rel="stylesheet" href="./css/style2.css" />
-               
-            </head>
-        
-          <header role="banner">
-            <nav role="navigation">
-          
-            
-            </nav>
-          </header>
-          <main role="main">
-            <section class="sec-intro" role="section">
-              <img src="https://www.techweekeurope.co.uk/wp-content/uploads/2012/07/wifimountaindownload.jpg" alt="" />
-              
-            </section>
-            <section class="sec-boxes" role="section">
-              <adrticle class="box">
-                <div class="box11">
-                <h2>Awards </h2>
-                </div>
-                <ul class="links">
-                  
-                  <li><a href="#" style="color:#FF0000;">Top Performer Recognition</a></li>
-                  <li><a href="#">Customer Service Awards</a></li>
-                  <li><a href="#">Above and Beyond Recognition</a></li>
-                  <li><a href="#">Peer to Peer Recognition</a></li>
-                  <li><a href="#">Perfect Attendance Programs</a></li>
-                  <li><a href="#">Welcome Aboard</a></li>
-                  <li><a href="#">Lorem Ipsum Dolor Site Amet Veritas Vos</a></li>
-                  <li><a href="#">Site Amet Veritas Vos Lorem Ipsum Dolor Site </a></li>
-
-          
-        
-      
-                  
-                
+        <section class="section-center">
+            <h3 class="company-title">We Lightening Services are commited to our clients and help them to grow with us</h3>
+            <article class="company-news">
+                <h3 class="title">News</h3>
+                <h4>Latest News...</h4>
+                <ul>
+                    <li><a>News 1</a></li>
+                    <li><a>News 2</a></li>
+                    <li><a>News 3</a></li>
+                    <li><a>News 4</a></li>
                 </ul>
-              </adrticle>
-            
-              
-              <adrticle class="box">
-                <h2>Articles</h2>
-                <ul class="links">
-                  <li><a href="#">Putting IT on the Business Scorecard: Key KPIs for CIOs</a></li>
-                  <li><a href="#">How to Find the Best IT Support Solutions: Remote or Onsite?</a></li>
-                  <li><a href="#">What Every Business Person Should Know About IT Sales & Marketing Tools </a></li>
-                  <li><a href="#">Factors that Determine the Cost of Small Business IT Systems</a></li>
-                  <li><a href="#">11 Reasons Why Companies Should Outsource Their IT Support Services</a></li>
-
-                
+                <br>
+                <h4>Previous News...</h4>
+                <ul>
+                    <li><a>News 1</a></li>
+                    <li><a>News 2</a></li>
+                    <li><a>News 3</a></li>
+                    <li><a>News 4</a></li>
                 </ul>
-              </adrticle>
+            </article>
 
-              <adrticle class="box">
-                <h2>Archives</h2>
-                <ul class="links">
-                  <li><a href="#">November 2020</a></li>
-                  <li><a href="#">October 2020</a></li>
-                  <li><a href="#">September 2020</a></li>
-                  <li><a href="#">August 2020</a></li>
-                  <li><a href="#">July 2020</a></li>
-                  <li><a href="#">June 2020</a></li>
-                  <li><a href="#">May 2020</a></li>
-                  <li><a href="#">March 2020</a></li>
-                  <li><a href="#">April 2020</a></li>
-                  <li><a href="#">May 2020</a></li>
-                 
+            <article class="company-posts">
+                <h3 class="title">Leadership Views</h3>
+                <ul>
+                    <li><a>Leader view 1</a></li>
+                    <li><a>Leader view 2</a></li>
+                    <li><a>Leader view 3</a></li>
+                    <li><a>Leader view 4</a></li>
                 </ul>
-              </adrticle>
+            </article>
 
-              
-              <adrticle class="box">
-                <h2>News </h2>
-                <ul class="links">
-                  <li><a href="#">Lorem Ipsum Dolor Site Amet Veritas Vos</a></li>
-                  <li><a href="#">Lorem Ipsum Dolor Site Amet Veritas Vos</a></li>
-                  <li><a href="#">Lorem Ipsum Dolor Site Amet Veritas Vos</a></li>
-                  <li><a href="#">Lorem Ipsum Dolor Site Amet Veritas Vos</a></li>
-                  <li><a href="#">Lorem Ipsum Dolor Site Amet Veritas Vos</a></li>
-                  <li><a href="#">Lorem Ipsum Dolor Site Amet Veritas Vos</a></li>
-                  <li><a href="#">Lorem Ipsum Dolor Site Amet Veritas Vos</a></li>
-                
+            <article class="company-events">
+                <h3 class="title">Upcoming Events</h3>
+                <div id="wrapper">
+                    <div id="row">
+                        <div id="first">
+                            <h4>Event 1</h4>
+                            <p>Commodo sit amet aliquet urna vulputate. Phasellus eget vulputate metus. Nam lacinia nisl quis nibh scelerisque eget suscipit tortor fringilla. Donec eu pulvinar tortor. Suspendisse malesuada faucibus eros, vitae molestie quam
+                                tempus commodo. Curabitur aliquet cursus viverra. Sed vel vestibulum quam. Curabitur pulvinar hendrerit justo vestibulum pulvinar. Nulla sit amet nunc felis, et consequat arcu. Donec lacinia massa et arcu commodo sit amet
+                                aliquet urna vulputate. Phasellus eget vulputate metus. Nam lacinia nisl quis nibh scelerisque eget suscipit tortor fringilla. Donec eu pulvinar tortor. Suspendisse malesuada faucibus eros, vitae molestie quam tempus commodo.
+                                Curabitur aliquet cursus viverra. Sed vel vestibulum quam. Curabitur pulvinar hendrerit justo vestibulum pulvinar. Nulla sit amet nunc felis, et consequat arcu. … <a href="#">Read entire article »</a></p>
+                        </div>
+                        <div id="second">
+                            <h4>Event 2</h4>
+                            <p>Commodo sit amet aliquet urna vulputate. Phasellus eget vulputate metus. Nam lacinia nisl quis nibh scelerisque eget suscipit tortor fringilla. Donec eu pulvinar tortor. Suspendisse malesuada faucibus eros, vitae molestie quam
+                                tempus commodo. Curabitur aliquet cursus viverra. Sed vel vestibulum quam. Curabitur pulvinar hendrerit justo vestibulum pulvinar. Nulla sit amet nunc felis, et consequat arcu. Donec lacinia massa et arcu commodo sit amet
+                                aliquet urna vulputate. Phasellus eget vulputate metus. Nam lacinia nisl quis nibh scelerisque eget suscipit tortor fringilla. Donec eu pulvinar tortor. Suspendisse malesuada faucibus eros, vitae molestie quam tempus commodo.
+                                Curabitur aliquet cursus viverra. Sed vel vestibulum quam. Curabitur pulvinar hendrerit justo vestibulum pulvinar. Nulla sit amet nunc felis, et consequat arcu. … <a href="#">Read entire article »</a></p>
+                        </div>
+                        <div id="third">
+                            <h4>Event 3</h4>
+                            <p>Commodo sit amet aliquet urna vulputate. Phasellus eget vulputate metus. Nam lacinia nisl quis nibh scelerisque eget suscipit tortor fringilla. Donec eu pulvinar tortor. Suspendisse malesuada faucibus eros, vitae molestie quam
+                                tempus commodo. Curabitur aliquet cursus viverra. Sed vel vestibulum quam. Curabitur pulvinar hendrerit justo vestibulum pulvinar. Nulla sit amet nunc felis, et consequat arcu. Donec lacinia massa et arcu commodo sit amet
+                                aliquet urna vulputate. Phasellus eget vulputate metus. Nam lacinia nisl quis nibh scelerisque eget suscipit tortor fringilla. Donec eu pulvinar tortor. Suspendisse malesuada faucibus eros, vitae molestie quam tempus commodo.
+                                Curabitur aliquet cursus viverra. Sed vel vestibulum quam. Curabitur pulvinar hendrerit justo vestibulum pulvinar. Nulla sit amet nunc felis, et consequat arcu. … <a href="#">Read entire article »</a></p>
+                        </div>
+                        <div id="fourth">
+                            <h4>Event 4</h4>
+                            <p>Commodo sit amet aliquet urna vulputate. Phasellus eget vulputate metus. Nam lacinia nisl quis nibh scelerisque eget suscipit tortor fringilla. Donec eu pulvinar tortor. Suspendisse malesuada faucibus eros, vitae molestie quam
+                                tempus commodo. Curabitur aliquet cursus viverra. Sed vel vestibulum quam. Curabitur pulvinar hendrerit justo vestibulum pulvinar. Nulla sit amet nunc felis, et consequat arcu. Donec lacinia massa et arcu commodo sit amet
+                                aliquet urna vulputate. Phasellus eget vulputate metus. Nam lacinia nisl quis nibh scelerisque eget suscipit tortor fringilla. Donec eu pulvinar tortor. Suspendisse malesuada faucibus eros, vitae molestie quam tempus commodo.
+                                Curabitur aliquet cursus viverra. Sed vel vestibulum quam. Curabitur pulvinar hendrerit justo vestibulum pulvinar. Nulla sit amet nunc felis, et consequat arcu. … <a href="#">Read entire article »</a></p>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            <article class="company-clients">
+                <h3 class="title">Our Clients</h3>
+                <ul>
+                    <li><img src="https://i.imgur.com/oSriTuP.png" alt="Google logo" /></li>
+                    <li><img src="https://i.imgur.com/kRgvevC.png" alt="Apple logo" /></li>
+                    <li><img src="https://i.imgur.com/GdYoyxo.png" alt="Intel logo" /></li>
+                    <li><img src="https://i.imgur.com/536rtCW.png" alt="Valve logo" /></li>
                 </ul>
-              </adrticle>
-
-              
-
-            </section>
-            <section class="sec-events" role="section">
-              <hr />
-              <h2>UPCOMING EVENTS</h2>
-              <article>
-                <h1>Tire Technology Expo</h1>
-                <div class="spost">
-                  
-                  <img src="images/Expo21.jpg" alt="" width="190" height="155">
-                  <p>Donec lacinia massa et arcu commodo sit amet aliquet urna vulputate. Phasellus eget vulputate metus. Nam lacinia nisl quis nibh scelerisque eget suscipit tortor fringilla. Donec eu pulvinar tortor. Suspendisse malesuada faucibus eros, vitae molestie quam tempus commodo. Curabitur aliquet cursus viverra. Sed vel vestibulum quam. Curabitur pulvinar hendrerit justo vestibulum pulvinar. Nulla sit amet nunc felis, et consequat arcu. Donec lacinia massa et arcu commodo sit amet aliquet urna vulputate. Phasellus eget vulputate metus. Nam lacinia nisl quis nibh scelerisque eget suscipit tortor fringilla. Donec eu pulvinar tortor. Suspendisse malesuada faucibus eros, vitae molestie quam tempus commodo. Curabitur aliquet cursus viverra. Sed vel vestibulum quam. Curabitur pulvinar hendrerit justo vestibulum pulvinar.
-                     Nulla sit amet nunc felis, et consequat arcu. … <a href="#">Read entire article »</a></p>
-               </div> 
-              </article>
-              <article>
-                <h1>Meteorology World Expo</h1>
-                <div class="spost">
-                  
-                  <img src="images/Expo22.jpg" alt="" width="190" height="155">
-                  <p>Arcu commodo sit amet aliquet urna vulputate. Phasellus eget vulputate metus. Nam lacinia nisl quis nibh scelerisque eget suscipit tortor fringilla. Donec eu pulvinar tortor. Suspendisse malesuada faucibus eros, vitae molestie quam tempus commodo. Curabitur aliquet cursus viverra. Sed vel vestibulum quam. Curabitur pulvinar hendrerit justo vestibulum pulvinar. Nulla sit amet nunc felis, et consequat arcu. Donec lacinia massa et arcu commodo sit amet aliquet urna vulputate. Phasellus eget vulputate metus. Nam lacinia nisl quis nibh scelerisque eget suscipit tortor fringilla. Donec eu pulvinar tortor. Suspendisse malesuada faucibus eros, vitae molestie quam tempus commodo. Curabitur aliquet cursus viverra. Sed vel vestibulum quam. Curabitur pulvinar hendrerit justo vestibulum pulvinar.
-                     Nulla sit amet nunc felis, et consequat arcu. … <a href="#">Read entire article »</a></p>
-               </div> 
-              </article>
-              <article>
-                <h1>Wearable Tech Expo</h1>
-               <div class="spost">
-                  
-                <img src="images/Expo23.jpg" alt="" width="190" height="155">
-                  <p>Sit amet aliquet urna vulputate. Phasellus eget vulputate metus. Nam lacinia nisl quis nibh scelerisque eget suscipit tortor fringilla. Donec eu pulvinar tortor. Suspendisse malesuada faucibus eros, vitae molestie quam tempus commodo. Curabitur aliquet cursus viverra. Sed vel vestibulum quam. Curabitur pulvinar hendrerit justo vestibulum pulvinar. Nulla sit amet nunc felis, et consequat arcu. Donec lacinia massa et arcu commodo sit amet aliquet urna vulputate. Phasellus eget vulputate metus. Nam lacinia nisl quis nibh scelerisque eget suscipit tortor fringilla. Donec eu pulvinar tortor. Suspendisse malesuada faucibus eros, vitae molestie quam tempus commodo. Curabitur aliquet cursus viverra. Sed vel vestibulum quam. Curabitur pulvinar hendrerit justo vestibulum pulvinar.
-                     Nulla sit amet nunc felis, et consequat arcu. … <a href="#">Read entire article »</a></p>
-               </div> 
-              </article>
-              <article>
-                <h1>TheSpace Tech Expo</h1>
-                <div class="spost">
-                  
-                  <img src="images/Expo24.png" alt="" width="190" height="155">
-                  <p>Commodo sit amet aliquet urna vulputate. Phasellus eget vulputate metus. Nam lacinia nisl quis nibh scelerisque eget suscipit tortor fringilla. Donec eu pulvinar tortor. Suspendisse malesuada faucibus eros, vitae molestie quam tempus commodo. Curabitur aliquet cursus viverra. Sed vel vestibulum quam. Curabitur pulvinar hendrerit justo vestibulum pulvinar. Nulla sit amet nunc felis, et consequat arcu. Donec lacinia massa et arcu commodo sit amet aliquet urna vulputate. Phasellus eget vulputate metus. Nam lacinia nisl quis nibh scelerisque eget suscipit tortor fringilla. Donec eu pulvinar tortor. Suspendisse malesuada faucibus eros, vitae molestie quam tempus commodo. Curabitur aliquet cursus viverra. Sed vel vestibulum quam. Curabitur pulvinar hendrerit justo vestibulum pulvinar.
-                     Nulla sit amet nunc felis, et consequat arcu. … <a href="#">Read entire article »</a></p>
-               </div> 
-              </article>
-            </section>
-            <section class="sec-projects" role="section">
-              <hr />
-              <h2>PREVIOUS PROJECTS</h2>
-              <article>
-                <h1>Neural network for Google</h1>
-                <p>Est kasd at elitr invidunt ipsum takimata. Et gubergren nonumy clita et lorem. Ea sea consetetur et justo dolor elitr.Ipsum magna kasd lorem nonumy dolores et voluptua justo sanctus. Et takimata invidunt ipsum ipsum lorem vero nonumy, est sanctus.Aliquyam et labore labore takimata et accusam erat erat sed sit. Eos justo sanctus voluptua ut erat clita eos stet. <a class="link" href="#">more...</a></p>
-              </article>
-              <article>
-                <h1>Faster operating system for Apple</h1>
-                <p>Ea ipsum Eos vero dolor sed sed dolore et. Lorem tempor lorem amet dolores duo, lorem dolores amet ipsum at et dolore..sadipscing et consetetur dolores nonumy elitr amet eirmod consetetur. Eirmod lorem sadipscing at ut est consetetur stet diam.Et rebum magna dolor at sed eirmod dolor dolor rebum, justo et kasd dolor ea dolore labore elitr. Dolore tempor.Vero sed kasd sea elitr stet sed. Dolor amet kasd duo consetetur eirmod gubergren. Ea accusam gubergren invidunt stet, et. <a class="link" href="#">more...</a></p>
-              </article>
-              <article>
-                <h1>Manufacturing technology for Intel</h1>
-                <p>Dolor magna dolores est justo sit ipsum lorem justo justo, est voluptua rebum amet aliquyam lorem eos labore sed rebum..Gubergren lorem eos gubergren dolor sed eirmod ipsum. Eos eos accusam aliquyam eos diam tempor rebum est dolor, dolor voluptua.Est sit duo invidunt ut magna et lorem lorem dolor sanctus. Ipsum labore et gubergren sanctus. Et lorem takimata lorem.. <a class="link" href="#">more...</a></p>
-              </article>
-            </section>
-            <section class="sec-standards" role="section">
-              <hr />
-              <h2>OUR STANDARDS</h2>
-              <article>
-                <h4>Excellence</h4>
-                <p>Vero invidunt et clita dolor amet rebum diam duo clita eos, et clita lorem vero stet et takimata. No labore.Stet elitr takimata duo sanctus accusam nonumy, stet dolores justo magna at, gubergren ipsum amet duo diam ut sed et.Consetetur sadipscing sea sit sed sit rebum et no elitr at. Ipsum vero invidunt voluptua kasd amet, rebum dolore vero.</p>
-              </article>
-              <article>
-                <h4>Uniqueness</h4>
-                <p>Clita stet sit rebum amet lorem.Elitr sadipscing dolor invidunt gubergren magna sanctus. Aliquyam erat dolores est kasd rebum kasd et. Ut aliquyam elitr et accusam. Nonumy rebum lorem ipsum stet duo sea ipsum, no diam accusam sit lorem takimata.Stet duo clita lorem et nonumy ea tempor amet duo est, consetetur eirmod ipsum ut nonumy labore lorem eos et,.Dolor sit est ipsum rebum et. Nonumy at clita amet.</p>
-              </article>
-            </section>
-            <section class="sec-partners" role="section">
-              <hr />
-              <h1>Our Partners</h1>
-              <div class="row">
-                <div class="logo-container">
-                  <img src="https://i.imgur.com/oSriTuP.png" alt="Google logo" />
-                </div>
-                <div class="logo-container">
-                  <img src="https://i.imgur.com/kRgvevC.png" alt="Apple logo" />
-                </div>
-                <div class="logo-container">
-                  <img src="https://i.imgur.com/ZZjeIP3.png" alt="Wii logo" />
-                </div>
-                <div class="logo-container">
-                  <img src="https://i.imgur.com/536rtCW.png" alt="Valve logo" />
-                </div>
-                <div class="logo-container">
-                  <img src="https://i.imgur.com/VTq1c9p.png" alt="Adithya Institute of Technology logo" />
-                </div>
-                <div class="logo-container">
-                  <img src="https://i.imgur.com/GdYoyxo.png" alt="Intel logo" />
-                </div>
-              </div>
-            </section>
-          </main>
-        </div>
-        </div>
-        <footer>
-          <nav role="navigation">
-           
-          </nav>
-          
-        </footer>
-        <div class="line"></div>
-
-
+            </article>
+        </section><br>
     </main>
 
     <!-- footer -->
@@ -336,7 +196,7 @@
         <p>&copy; <span id="date"></span> all rights reserved</p>
     </footer>
     <!-- end of footer -->
-  </div>
+    <script src="./javascript/script.js"></script>
 </body>
 
 </html>

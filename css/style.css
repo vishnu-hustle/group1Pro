@@ -33,10 +33,6 @@
     --grey-8: #e9ecef;
 }
 
-#imp {
-    color: red;
-}
-
 *,
 ::after,
 ::before {
@@ -157,6 +153,10 @@ Navigation
     display: block;
     width: 240px;
     float: left;
+    animation-name: mytran;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
 }
 
 .bar-btn {
@@ -215,7 +215,7 @@ Navigation
         font-weight: 300;
     }
     .nav-link:hover {
-        transform: rotateX(40);
+        transform: rotateX(40deg);
         color: var(--clr-primary-4);
     }
 }
@@ -417,6 +417,10 @@ form {
 
 .form-control {
     margin-bottom: 2rem;
+}
+
+.form-control span {
+    color: red;
 }
 
 .form-control label {
@@ -718,10 +722,12 @@ Company
 
 .company-posts ul li {
     list-style-type: disc;
+    margin: 1em;
 }
 
 .company-news ul li {
     list-style-type: disc;
+    margin: 1em;
 }
 
 .company-posts ul li a {
@@ -1153,5 +1159,14 @@ index
     }
     .leadership-container {
         margin: 0 auto;
+    }
+}
+
+@keyframes mytran {
+    from {
+        transform: rotateY(180deg);
+    }
+    to {
+        transform: rotateY(0deg);
     }
 }

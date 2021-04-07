@@ -33,10 +33,6 @@
     --grey-8: #e9ecef;
 }
 
-#imp {
-    color: red;
-}
-
 *,
 ::after,
 ::before {
@@ -157,6 +153,10 @@ Navigation
     display: block;
     width: 240px;
     float: left;
+    animation-name: mytran;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
 }
 
 .bar-btn {
@@ -215,7 +215,7 @@ Navigation
         font-weight: 300;
     }
     .nav-link:hover {
-        transform: rotateX(40);
+        transform: rotateX(40deg);
         color: var(--clr-primary-4);
     }
 }
@@ -354,16 +354,6 @@ Footer
     margin: 0;
 }
 
-.bannerCompany {
-    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    max-width: 100vw;
-    height: 80vh;
-    margin: 0;
-}
-
 .contact-address {
     /* background: var(--grey-8); */
     margin: 2rem 0;
@@ -374,12 +364,6 @@ Footer
     text-align: center;
     padding-top: 2rem;
     text-transform: uppercase;
-}
-
-.company-title {
-    text-align: center;
-    padding-top: 1rem;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
 }
 
 .contact-address:hover {
@@ -433,6 +417,10 @@ form {
 
 .form-control {
     margin-bottom: 2rem;
+}
+
+.form-control span {
+    color: red;
 }
 
 .form-control label {
@@ -633,11 +621,38 @@ Who We Serve
     }
 }
 
+
+/* 
+================================
+Company
+================================
+*/
+
+.company-banner {
+    max-width: 100vw;
+    height: 80vh;
+    margin-bottom: 2rem;
+    background: var(--black);
+}
+
+.company-banner-container {
+    width: 100%;
+    height: 100%;
+    opacity: 0.6;
+    object-fit: cover;
+}
+
+.company-title {
+    text-align: center;
+    padding-top: 1rem;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
 #wrapper {
     display: table;
     width: 100%;
     height: 100%;
-    padding: .2em 2em;
+    padding: 0.2em 2em;
     margin-top: 5%;
 }
 
@@ -650,7 +665,7 @@ Who We Serve
 #first {
     display: table-cell;
     text-decoration: none;
-    padding: .2em 1em;
+    padding: 0.2em 1em;
     height: 30%;
     width: 25%;
 }
@@ -658,7 +673,7 @@ Who We Serve
 #second {
     display: table-cell;
     text-decoration: none;
-    padding: .2em 1em;
+    padding: 0.2em 1em;
     height: 30%;
     width: 25%;
 }
@@ -666,7 +681,7 @@ Who We Serve
 #third {
     display: table-cell;
     text-decoration: none;
-    padding: .2em 1em;
+    padding: 0.2em 1em;
     height: 30%;
     width: 25%;
 }
@@ -674,7 +689,7 @@ Who We Serve
 #fourth {
     display: table-cell;
     text-decoration: none;
-    padding: .2em 1em;
+    padding: 0.2em 1em;
     height: 30%;
     width: 25%;
 }
@@ -699,9 +714,26 @@ Who We Serve
     transform: scale(1.2);
 }
 
+@media screen and (max-width: 769px) {
+    .company-events {
+        display: none;
+    }
+}
+
+.company-posts ul li {
+    list-style-type: disc;
+    margin: 1em;
+}
+
+.company-news ul li {
+    list-style-type: disc;
+    margin: 1em;
+}
+
 .company-posts ul li a {
     text-decoration: none;
-    padding: .2em 1em;
+    padding: 0.2em 1em;
+    text-decoration: underline;
 }
 
 .company-posts ul li a:hover {
@@ -709,9 +741,15 @@ Who We Serve
     transform: scale(1.2);
 }
 
+.company-news ul li a:link {
+    padding: 0.2em 1em;
+    color: red;
+}
+
 .company-news ul li a {
     text-decoration: none;
-    padding: .2em 1em;
+    text-decoration: underline;
+    padding: 0.2em 1em;
 }
 
 .company-news ul li a:hover {
@@ -732,7 +770,7 @@ Who We Serve
 
 .company-clients ul li img {
     text-decoration: none;
-    padding: .2em 2em;
+    padding: 0.2em 2em;
     height: 30%;
     width: 20%;
 }
@@ -740,4 +778,395 @@ Who We Serve
 .company-clients ul li img:hover {
     color: var(--clr-primary-5);
     transform: scale(1.2);
+}
+
+
+/* 
+================================
+What we do
+================================
+*/
+
+.service-banner {
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../images/whatwedo.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-width: 100vw;
+    height: 80vh;
+    margin-bottom: 2rem;
+}
+
+.wwd_table {
+    display: block;
+    width: 85%;
+    margin: 0 auto;
+}
+
+.wwd-cell {
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    border-radius: 20px;
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+}
+
+#consulting {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../images/consulting.jpg");
+    border-top: 0px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-width: 100vw;
+    height: 60vh;
+    display: table;
+    width: 100%;
+    margin: 2rem 1rem;
+    transition: var(--transition);
+}
+
+#consulting:hover {
+    transform: scale(1.03);
+}
+
+.container {
+    vertical-align: middle;
+    display: table-cell;
+    top: -50%;
+}
+
+.container h3 {
+    color: var(--clr-primary-9);
+    padding: 0 1rem;
+}
+
+.container p {
+    color: var(--white);
+    font-size: 1.02rem;
+    font-weight: 400;
+    padding: 0 2rem;
+}
+
+#perspectives {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../images/perspectives.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-width: 100vw;
+    height: 60vh;
+    display: table;
+    width: 100%;
+    margin: 2rem 1rem;
+    transition: var(--transition);
+}
+
+#perspectives:hover {
+    transform: scale(1.03);
+}
+
+.service-title {
+    text-align: center;
+    margin: 2rem 0;
+}
+
+.services {
+    width: 95%;
+    margin: auto;
+    display: block;
+}
+
+#cloud {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../images/cloud.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: table;
+    height: 60vh;
+    width: 100%;
+    margin: 1rem 1rem;
+    transition: var(--transition);
+}
+
+#cloud:hover {
+    transform: scale(1.03);
+}
+
+#solution {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../images/solution.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: table;
+    height: 60vh;
+    width: 100%;
+    margin: 1rem 1rem;
+    transition: var(--transition);
+}
+
+#solution:hover {
+    transform: scale(1.03);
+}
+
+#supplychain {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../images/supplychain.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: table;
+    height: 60vh;
+    width: 100%;
+    margin: 1rem 1rem;
+    transition: var(--transition);
+}
+
+#supplychain:hover {
+    transform: scale(1.03);
+}
+
+.stories {
+    margin: 2rem auto;
+    width: 90%;
+    display: block;
+}
+
+.container-shape {
+    -webkit-clip-path: polygon( 0% 0%, 100% 0%, 100% 75%, 75% 75%, 75% 100%, 50% 75%, 0% 75%);
+    clip-path: polygon( 0% 0%, 100% 0%, 100% 75%, 75% 75%, 75% 100%, 50% 75%, 0% 75%);
+    padding: 2rem 3rem 6rem 3rem;
+    background: var(--clr-primary-10);
+    text-align: center;
+    vertical-align: middle;
+    margin-top: 0;
+    height: 35vh;
+}
+
+.cust {
+    display: table;
+    width: 100%;
+    margin: 2rem 1rem;
+    border: 0;
+    transition: var(--transition);
+}
+
+.cust:hover {
+    transform: scale(1.03);
+}
+
+.container-shape h4 {
+    color: var(--clr-primary-1);
+}
+
+.container-shape p {
+    color: var(--black);
+    letter-spacing: 1px;
+    line-height: 1.15;
+}
+
+@media screen and (min-width: 769px) {
+    #consulting {
+        width: 45%;
+        float: left;
+    }
+    #perspectives {
+        width: 45%;
+        float: left;
+    }
+    .container {
+        margin-top: 7rem;
+    }
+    #cloud {
+        width: 45%;
+        float: left;
+    }
+    #solution {
+        width: 45%;
+        float: left;
+    }
+    #supplychain {
+        width: 45%;
+        float: left;
+    }
+    .cust {
+        width: 45%;
+        float: left;
+    }
+    .container-shape {
+        height: 60vh;
+    }
+}
+
+@media screen and (min-width: 980px) {
+    #cloud {
+        width: 29%;
+        float: left;
+    }
+    #solution {
+        width: 29%;
+        float: left;
+    }
+    #supplychain {
+        width: 29%;
+        float: left;
+    }
+    .cust {
+        width: 29%;
+        float: left;
+    }
+    .container-shape {
+        padding: 2rem 1rem 4rem 1rem;
+    }
+}
+
+
+/* 
+================================
+index
+================================
+*/
+
+.index-banner {
+    max-width: 100vw;
+    height: 80vh;
+    margin-bottom: 2rem;
+    background: var(--black);
+}
+
+.index-banner-container {
+    width: 100%;
+    height: 100%;
+    opacity: 0.6;
+    object-fit: cover;
+}
+
+.index-section {
+    width: 90vw;
+    max-width: 1170px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.index-section h3 {
+    letter-spacing: var(--spacing);
+    text-align: left;
+}
+
+.index-section h4 {
+    letter-spacing: var(--spacing);
+    text-align: left;
+}
+
+.index-section p {
+    line-height: 1.25;
+}
+
+.index-articles {
+    margin: 3rem 0;
+}
+
+.index-title {
+    text-align: left;
+    margin-top: 3rem;
+}
+
+.leadership-section {
+    display: block;
+    margin-bottom: 3rem;
+}
+
+.leadership {
+    width: 100%;
+    display: block;
+}
+
+.leadership-container {
+    width: 100%;
+    height: 25rem;
+    margin: 2rem auto;
+    transition: var(--transition);
+}
+
+.leadership-img {
+    display: block;
+    width: 80%;
+    height: 80%;
+    object-fit: cover;
+    border-top-left-radius: var(--radius);
+    border-top-right-radius: var(--radius);
+    margin: 0 auto;
+    object-position: center;
+}
+
+.leadership-info {
+    padding-top: 1rem;
+    display: block;
+    background: var(--clr-primary-1);
+    height: 20%;
+    width: 80%;
+    border-bottom-left-radius: var(--radius);
+    border-bottom-right-radius: var(--radius);
+    margin: 0 auto;
+}
+
+.leadership-info h4 {
+    text-align: center;
+    color: white;
+    margin: 0.2rem 0;
+}
+
+.index-social-icons {
+    display: block;
+    text-align: center;
+    margin-top: 0.5rem;
+}
+
+.index-social-icons li {
+    display: inline-block;
+    padding: 0 0;
+}
+
+.index-social-icon {
+    color: var(--white);
+    font-size: 1rem;
+    margin: 0 1rem;
+    transition: var(--transition);
+    background: transparent;
+}
+
+.leadership-container:hover {
+    transform: scale(1.05);
+}
+
+.leadership-container:hover .index-social-icon {
+    color: var(--clr-primary-5);
+}
+
+.leadership-container:hover .leadership-info {
+    background: var(--black);
+}
+
+.leadership-container:hover .leadership-info h4 {
+    color: var(--clr-primary-5);
+}
+
+@media screen and (min-width: 560px) {
+    .leadership-section {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(330px, 1fr));
+        row-gap: 2rem;
+    }
+    .leadership-container {
+        margin: 0 auto;
+    }
+}
+
+@keyframes mytran {
+    from {
+        transform: rotateY(180deg);
+    }
+    to {
+        transform: rotateY(0deg);
+    }
 }
